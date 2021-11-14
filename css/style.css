@@ -63,6 +63,23 @@ body{
     position: relative;
 }
 
+.none{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+.box:hover .none{
+    background-image: url(/img/dogecoinn.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    display:block;
+    z-index: 1001;
+}
+
 .box img{
     width: 100%;
     height: 100%;
@@ -75,6 +92,7 @@ body{
     padding: 4px 5px;
     bottom: 0;
     left: 0;
+    z-index: 1001;
 }
 
 footer{
@@ -90,6 +108,15 @@ footer{
 
 .left{
     display: flex;
+    margin-top: 20px;
+}
+
+#cam{
+    width: 70px;
+}
+
+#text-centered{
+    padding-right: 12px;
 }
 
 .icon{
